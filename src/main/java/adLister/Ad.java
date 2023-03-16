@@ -3,7 +3,7 @@ package adLister;
 public class Ad {
     private long id;
     private long userId;
-    private String title;
+    protected String title;
     private String description;
 
     public Ad(long id, long userId, String title, String description) {

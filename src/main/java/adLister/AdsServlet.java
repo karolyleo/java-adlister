@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "adLister.AdsServlet", urlPatterns = "/ads")
+@WebServlet("/ads")
 public class AdsServlet extends HttpServlet {
 
     @Override
@@ -16,6 +16,10 @@ public class AdsServlet extends HttpServlet {
 
         Ads ads = DaoFactory.getAdsDao();
         List<Ad> adList = ads.all();
+        System.out.println("Test");
+        for(Ad ad: adList) {
+            System.out.println(ad.getTitle());
+        }
         req.setAttribute("adList", adList);
 
         req.getRequestDispatcher("ads/index.jsp").forward(req, resp);

@@ -16,15 +16,13 @@ public class ListAdsDao implements Ads {
         return ads;
     }
 
-//    CREATE USER 'adlister'@'localhost' IDENTIFIED BY 'codeup';
-
     private List<Ad> generateAds() {
         List<Ad> ads = new ArrayList<>();
         ads.add(new Ad(
             1,
             1,
-            "playstation for sale",
-            "This is a slightly used playstation"
+            "local= playstation is not for sale",
+            "local: This is a slightly used playstation"
         ));
         ads.add(new Ad(
             2,
