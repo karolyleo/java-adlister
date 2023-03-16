@@ -1,3 +1,5 @@
+package adLister;
+
 public class DaoFactory {
     private static Ads adsDao;
 

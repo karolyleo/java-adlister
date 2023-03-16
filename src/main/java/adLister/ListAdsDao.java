@@ -1,3 +1,8 @@
+package adLister;
+
+import adLister.Ad;
+import adLister.Ads;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +15,8 @@ public class ListAdsDao implements Ads {
         }
         return ads;
     }
+
+//    CREATE USER 'adlister'@'localhost' IDENTIFIED BY 'codeup';
 
     private List<Ad> generateAds() {
         List<Ad> ads = new ArrayList<>();
