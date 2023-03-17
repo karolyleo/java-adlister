@@ -9,7 +9,6 @@
     <c:forEach var="ad" items="${adList}">
         <div>
             <h2>${ad.title}</h2>
-            <p>${ad.getUserId()}</p>
             <p>${ad.getDescription()}</p>
         </div>
     </c:forEach>
